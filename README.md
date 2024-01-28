@@ -18,8 +18,12 @@
 ## Подразделения:(
 	* id, primary_key , serial
 	* название подразделения, varchar(50)
-	* тип подразделения, varchar(50)
-	* id филиала внешний ключ, integer )
+	* id типа подразделения, внешний ключ, integer
+	* id филиала, внешний ключ, integer )
+ 
+## Тип подразделения:(
+	* id, primary_key , serial
+	* название типа , varchar(50)
 
 ## Должности:(
 	* id, primary_key , serial
@@ -40,6 +44,5 @@
 	* id проекта, внешний ключ, integer )
 
 ## Принадлежность к проекту:(
-	* id, primary_key , serial
 	* id сотрудника, внешний ключ, integer
 	* id проекта, внешний ключ, integer )
